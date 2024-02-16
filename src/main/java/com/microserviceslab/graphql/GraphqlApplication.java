@@ -63,6 +63,7 @@ public class GraphqlApplication {
 		SchemaGenerator generator = new SchemaGenerator();
 		GraphQLSchema graphQLSchema = generator.makeExecutableSchema(typeDefinitionRegistry, runtimeWiring);
 		System.out.println("HI WORLD");
+		System.out.println("HI WORLD2");
 		return GraphQL.newGraphQL(graphQLSchema).build();
 	}
 }
